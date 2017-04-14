@@ -20,6 +20,27 @@ Process multiple files:
 
 * `sketchy save samples/MyCool samples/MyOtherCool`
 
+## Library usage
+
+```js
+import sketchy from 'sketchy-cli'
+import sketch2json from 'sketch2json'
+
+let file = './my-app.sketch'
+let sketchJSON = sketch2json(file)
+
+let options = {
+  log: true,
+  action: (sketch) => {
+    let newSketch = sketch
+    // ... some JSON transformations
+    return newSketch
+  }
+}
+
+let mySketchy = sketchy.actions.transform(sketchJSON, file, options)
+```
+
 ## Pretty indentation
 
 * `-p --pretty` to enable pretty print output
