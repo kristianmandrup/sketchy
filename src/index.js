@@ -1,6 +1,14 @@
 const fs = require('fs')
-const replaceExt = require('replace-ext');
+const replaceExt = require('replace-ext')
 const sketch2json = require('sketch2json')
+const chalk = require('chalk')
+const $error = chalk.bold.red;
+
+function error(err) {
+  console.error($error(err.message))
+  process.exit(1)
+}
+
 
 function execute(file, action, options) {
   file = replaceExt(file, '.sketch')
@@ -8,8 +16,7 @@ function execute(file, action, options) {
 
   fs.readFile(file, (err, data) => {
     if (err) {
-      console.error(err.message)
-      process.exit(1)
+      return error(err.message)
     }
 
     sketch2json(data).then(result => {

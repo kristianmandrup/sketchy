@@ -36,6 +36,10 @@ const list = {
   identity
 }
 
+const chalk = require('chalk')
+const $error = chalk.bold.red;
+
+
 function valid(val) {
   return Object.keys(list).indexOf(val) >= 0
 }
@@ -45,7 +49,7 @@ function raiseError(val) {
 }
 
 function error(val) {
-  console.error(`invalid transformation function: ${val}`)
+  console.error($error(`invalid transformation function: ${val}`))
   process.exit(1)
 }
 
