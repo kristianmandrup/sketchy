@@ -1,0 +1,280 @@
+{
+    "pages": {
+        "46514F00-76CA-4B36-B9FD-C4D473A22885": {
+            "_class": "page",
+            "do_objectID": "46514F00-76CA-4B36-B9FD-C4D473A22885",
+            "exportOptions": {
+                "_class": "exportOptions",
+                "exportFormats": [],
+                "includedLayerIds": [],
+                "layerOptions": 0,
+                "shouldTrim": false
+            },
+            "frame": {
+                "_class": "rect",
+                "constrainProportions": false,
+                "height": 300,
+                "width": 300,
+                "x": 0,
+                "y": 0
+            },
+            "isFlippedHorizontal": false,
+            "isFlippedVertical": false,
+            "isLocked": false,
+            "isVisible": true,
+            "layerListExpandedType": 0,
+            "name": "Page 1",
+            "nameIsFixed": false,
+            "resizingType": 0,
+            "rotation": 0,
+            "shouldBreakMaskChain": false,
+            "style": {
+                "_class": "style",
+                "endDecorationType": 0,
+                "miterLimit": 10,
+                "startDecorationType": 0
+            },
+            "hasClickThrough": true,
+            "layers": [
+                {
+                    "_class": "shapeGroup",
+                    "do_objectID": "56EAC3E3-5D0B-44DD-A589-ACB22A37E194",
+                    "exportOptions": {
+                        "_class": "exportOptions",
+                        "exportFormats": [],
+                        "includedLayerIds": [],
+                        "layerOptions": 0,
+                        "shouldTrim": false
+                    },
+                    "frame": {
+                        "_class": "rect",
+                        "constrainProportions": false,
+                        "height": 195,
+                        "width": 302,
+                        "x": 155,
+                        "y": 92
+                    },
+                    "isFlippedHorizontal": false,
+                    "isFlippedVertical": false,
+                    "isLocked": false,
+                    "isVisible": true,
+                    "layerListExpandedType": 1,
+                    "name": "Rectangle",
+                    "nameIsFixed": false,
+                    "resizingType": 0,
+                    "rotation": 0,
+                    "shouldBreakMaskChain": false,
+                    "style": {
+                        "_class": "style",
+                        "borders": [
+                            {
+                                "_class": "border",
+                                "isEnabled": false,
+                                "color": {
+                                    "_class": "color",
+                                    "alpha": 1,
+                                    "blue": 0.592,
+                                    "green": 0.592,
+                                    "red": 0.592
+                                },
+                                "fillType": 0,
+                                "position": 1,
+                                "thickness": 1
+                            }
+                        ],
+                        "endDecorationType": 0,
+                        "fills": [
+                            {
+                                "_class": "fill",
+                                "isEnabled": true,
+                                "color": {
+                                    "_class": "color",
+                                    "alpha": 1,
+                                    "blue": 0.847,
+                                    "green": 0.847,
+                                    "red": 0.847
+                                },
+                                "fillType": 0,
+                                "noiseIndex": 0,
+                                "noiseIntensity": 0,
+                                "patternFillType": 0,
+                                "patternTileScale": 1
+                            }
+                        ],
+                        "miterLimit": 10,
+                        "startDecorationType": 0
+                    },
+                    "hasClickThrough": false,
+                    "layers": [
+                        {
+                            "_class": "rectangle",
+                            "do_objectID": "92849019-E666-4396-9EE2-D0270B9A4D9E",
+                            "exportOptions": {
+                                "_class": "exportOptions",
+                                "exportFormats": [],
+                                "includedLayerIds": [],
+                                "layerOptions": 0,
+                                "shouldTrim": false
+                            },
+                            "frame": {
+                                "_class": "rect",
+                                "constrainProportions": false,
+                                "height": 195,
+                                "width": 302,
+                                "x": 0,
+                                "y": 0
+                            },
+                            "isFlippedHorizontal": false,
+                            "isFlippedVertical": false,
+                            "isLocked": false,
+                            "isVisible": true,
+                            "layerListExpandedType": 0,
+                            "name": "Path",
+                            "nameIsFixed": false,
+                            "resizingType": 0,
+                            "rotation": 0,
+                            "shouldBreakMaskChain": false,
+                            "booleanOperation": -1,
+                            "edited": false,
+                            "path": {
+                                "_class": "path",
+                                "isClosed": true,
+                                "points": [
+                                    {
+                                        "_class": "curvePoint",
+                                        "cornerRadius": 0,
+                                        "curveFrom": "{0, 0}",
+                                        "curveMode": 1,
+                                        "curveTo": "{0, 0}",
+                                        "hasCurveFrom": false,
+                                        "hasCurveTo": false,
+                                        "point": "{0, 0}"
+                                    },
+                                    {
+                                        "_class": "curvePoint",
+                                        "cornerRadius": 0,
+                                        "curveFrom": "{1, 0}",
+                                        "curveMode": 1,
+                                        "curveTo": "{1, 0}",
+                                        "hasCurveFrom": false,
+                                        "hasCurveTo": false,
+                                        "point": "{1, 0}"
+                                    },
+                                    {
+                                        "_class": "curvePoint",
+                                        "cornerRadius": 0,
+                                        "curveFrom": "{1, 1}",
+                                        "curveMode": 1,
+                                        "curveTo": "{1, 1}",
+                                        "hasCurveFrom": false,
+                                        "hasCurveTo": false,
+                                        "point": "{1, 1}"
+                                    },
+                                    {
+                                        "_class": "curvePoint",
+                                        "cornerRadius": 0,
+                                        "curveFrom": "{0, 1}",
+                                        "curveMode": 1,
+                                        "curveTo": "{0, 1}",
+                                        "hasCurveFrom": false,
+                                        "hasCurveTo": false,
+                                        "point": "{0, 1}"
+                                    }
+                                ]
+                            },
+                            "fixedRadius": 0,
+                            "hasConvertedToNewRoundCorners": true
+                        }
+                    ],
+                    "clippingMaskMode": 0,
+                    "hasClippingMask": false,
+                    "windingRule": 1
+                }
+            ],
+            "horizontalRulerData": {
+                "_class": "rulerData",
+                "base": 0,
+                "guides": []
+            },
+            "includeInCloudUpload": true,
+            "verticalRulerData": {
+                "_class": "rulerData",
+                "base": 0,
+                "guides": []
+            }
+        }
+    },
+    "document": {
+        "_class": "document",
+        "do_objectID": "1CA519E8-0829-4CB8-9C86-0FB0024EA044",
+        "assets": {
+            "_class": "assetCollection",
+            "colors": [],
+            "gradients": [],
+            "imageCollection": {
+                "_class": "imageCollection",
+                "images": {}
+            },
+            "images": []
+        },
+        "currentPageIndex": 0,
+        "enableLayerInteraction": true,
+        "enableSliceInteraction": true,
+        "foreignSymbols": [],
+        "layerStyles": {
+            "_class": "sharedStyleContainer",
+            "objects": []
+        },
+        "layerSymbols": {
+            "_class": "symbolContainer",
+            "objects": []
+        },
+        "layerTextStyles": {
+            "_class": "sharedTextStyleContainer",
+            "objects": []
+        },
+        "pages": [
+            {
+                "_class": "MSJSONFileReference",
+                "_ref_class": "MSImmutablePage",
+                "_ref": "pages/46514F00-76CA-4B36-B9FD-C4D473A22885"
+            }
+        ]
+    },
+    "user": {
+        "46514F00-76CA-4B36-B9FD-C4D473A22885": {
+            "scrollOrigin": "{0, 0}",
+            "zoomValue": 1
+        },
+        "1CA519E8-0829-4CB8-9C86-0FB0024EA044": {
+            "pageListHeight": -1
+        }
+    },
+    "meta": {
+        "commit": "335a30073fcb2dc64a0abd6148ae147d694c887d",
+        "appVersion": "43.1",
+        "build": 39012,
+        "app": "com.bohemiancoding.sketch3",
+        "pagesAndArtboards": {
+            "46514F00-76CA-4B36-B9FD-C4D473A22885": {
+                "name": "Page 1",
+                "artboards": {}
+            }
+        },
+        "fonts": [],
+        "created": {
+            "app": "com.bohemiancoding.sketch3",
+            "commit": "335a30073fcb2dc64a0abd6148ae147d694c887d",
+            "build": 39012,
+            "appVersion": "43.1",
+            "variant": "NONAPPSTORE",
+            "version": 88
+        },
+        "version": 88,
+        "saveHistory": [
+            "NONAPPSTORE.39012"
+        ],
+        "autosaved": 0,
+        "variant": "NONAPPSTORE"
+    }
+}

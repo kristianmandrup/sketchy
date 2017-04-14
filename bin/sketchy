@@ -1,0 +1,67 @@
+#!/usr/bin/env node
+
+const sketchy = require('../dist')
+const program = require('commander')
+
+function processAll(files, action, options) {
+  if (Array.isArray(files)) {
+    files.forEach(function (file) {
+      // console.log(file)
+      sketchy(file, action, options)
+    });
+  }
+}
+
+const defaults = {
+  indent: 2
+}
+
+function format(result, file, options) {
+  options = Object.assign(defaults, options)
+
+  if (!options.pretty) return JSON.stringify(result)
+  return JSON.stringify(result, null, options.indent)
+}
+
+
+function print(result, file, options) {
+  format(result, file, options)
+  console.log(result)
+}
+
+const fs = require('fs')
+const replaceExt = require('replace-ext');
+
+function save(result, file, options = {}) {
+  const jsonFile = replaceExt(file, '.json')
+  const content = format(result, file, options)
+  fs.writeFile(jsonFile, content, (err, data) => {
+    if (err) {
+      console.error(err.message);
+      process.exit(1)
+    }
+    console.log('saving: ', jsonFile)
+  })
+}
+
+program
+  .version('0.0.1')
+
+program
+  // .command('print <file> [files...]')
+  .command('print <files...>')
+  .option('-p, --pretty', 'Pretty print')
+  .option('-i, --indent <n>', 'indentation', parseInt)
+  .action((files, options) => {
+    processAll(files, print, options)
+  })
+
+program
+  .command('save <files...>')
+  .option('-p, --pretty', 'Pretty print')
+  .option('-i, --indent <n>', 'indentation', parseInt)
+  .action((files, options) => {
+    processAll(files, save, options)
+  })
+
+program.parse(process.argv);
