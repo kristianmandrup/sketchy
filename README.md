@@ -4,6 +4,11 @@ Sketch 43 CLI wrapper for [sketch2json](https://github.com/xaviervia/sketch2json
 
 *Print* or *Save* your Sketch files as JSON directly from the CLI :)
 
+## Install
+
+* npm: `npm i -g sketchy-cli`
+* yarn: `yarn global add sketchy-cli`
+
 ## CLI usage
 
 * `sketchy print samples/MyCool` - print it
