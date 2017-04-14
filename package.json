@@ -1,6 +1,6 @@
 {
   "name": "sketchy-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI wrapper for sketch2json",
   "main": "./src/index.js",
   "bin": "./bin/sketchy",
