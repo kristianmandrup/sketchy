@@ -1,4 +1,4 @@
-# Sketchy
+# Sketchy CLI
 
 Sketch 43 CLI wrapper for [sketch2json](https://github.com/xaviervia/sketch2json)
 
