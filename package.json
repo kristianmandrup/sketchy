@@ -2,7 +2,7 @@
   "name": "sketchy-cli",
   "version": "1.0.0",
   "description": "CLI wrapper for sketch2json",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "bin": "./bin/sketchy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

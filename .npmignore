@@ -2,3 +2,4 @@ node_modules
 *.log
 samples
 test
+.vscode

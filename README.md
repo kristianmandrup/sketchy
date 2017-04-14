@@ -25,19 +25,23 @@ Process multiple files:
 
 These options can be used with both `print` and `save` commands
 
-`sketchy save samples/MyCool.sketch --pretty --indent 4`
+* `sketchy save samples/MyCool.sketch --pretty` (pretty print)
+* `sketchy save samples/MyCool.sketch --indent 4` (implicit pretty print)
 
 ### Display
 
 Display JSON for one or more sketch files
 
-`sketchy print MyCool dev/CarApp` or `sketchy print MyCool.sketch dev/CarApp.sketch`
+* `sketchy print MyCool.sketch dev/CarApp.sketch`
+* `sketchy print MyCool dev/CarApp` (shorthand)
+
 
 ### Save
 
 Convert and save as JSON file for one or more sketch files
 
-`sketchy save MyCool dev/CarApp` or `sketchy save MyCool.sketch dev/CarApp.sketch`
+* `sketchy save MyCool.sketch dev/CarApp.sketch`
+* `sketchy save MyCool dev/CarApp` (shorthand)
 
 Saves:
 

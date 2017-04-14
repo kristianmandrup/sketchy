@@ -17,6 +17,11 @@ const defaults = {
 }
 
 function format(result, file, options) {
+  // if indent explicitly set, then pretty must be true
+  if (options.indent) {
+    options.pretty = true
+  }
+
   options = Object.assign(defaults, options)
 
   if (!options.pretty) return JSON.stringify(result)
