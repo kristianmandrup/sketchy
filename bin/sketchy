@@ -1,72 +1,42 @@
 #!/usr/bin/env node
 
-const sketchy = require('../dist')
 const program = require('commander')
+const sketchy = require('../src')
+let {
+  actions,
+  execute,
+  transformations
+} = sketchy
 
 function processAll(files, action, options) {
   if (Array.isArray(files)) {
     files.forEach(function (file) {
-      // console.log(file)
-      sketchy(file, action, options)
+      execute(file, action, options)
     });
   }
 }
 
-const defaults = {
-  indent: 2
-}
-
-function format(result, file, options) {
-  // if indent explicitly set, then pretty must be true
-  if (options.indent) {
-    options.pretty = true
-  }
-
-  options = Object.assign(defaults, options)
-
-  if (!options.pretty) return JSON.stringify(result)
-  return JSON.stringify(result, null, options.indent)
-}
-
-
-function print(result, file, options) {
-  format(result, file, options)
-  console.log(result)
-}
-
-const fs = require('fs')
-const replaceExt = require('replace-ext');
-
-function save(result, file, options = {}) {
-  const jsonFile = replaceExt(file, '.json')
-  const content = format(result, file, options)
-  fs.writeFile(jsonFile, content, (err, data) => {
-    if (err) {
-      console.error(err.message);
-      process.exit(1)
-    }
-    console.log('saving: ', jsonFile)
-  })
-}
-
 program
-  .version('0.0.1')
-
-program
-  // .command('print <file> [files...]')
-  .command('print <files...>')
+  .version('1.1.0')
+  .option('-t, --transform [transformation]', 'Apply transformation', transformations.check)
   .option('-p, --pretty', 'Pretty print')
-  .option('-i, --indent <n>', 'indentation', parseInt)
+  .option('-l, --log', 'Add Logging')
+  .option('-i, --indent [spaces]', 'indentation', parseInt)
+
+// .usage('[options] <files ...>')
+
+program
+  .command('print <files...>')
   .action((files, options) => {
-    processAll(files, print, options)
+    options = Object.assign(options.parent, options)
+    processAll(files, actions.print, options)
   })
 
 program
   .command('save <files...>')
-  .option('-p, --pretty', 'Pretty print')
-  .option('-i, --indent <n>', 'indentation', parseInt)
   .action((files, options) => {
-    processAll(files, save, options)
+    options = Object.assign(options.parent, options)
+    processAll(files, actions.save, options)
   })
 
 program.parse(process.argv);

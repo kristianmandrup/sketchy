@@ -11,6 +11,8 @@ Sketch 43 CLI wrapper for [sketch2json](https://github.com/xaviervia/sketch2json
 
 ## CLI usage
 
+* `sketchy --version`
+* `sketchy --help`
 * `sketchy print samples/MyCool` - print it
 * `sketchy save samples/MyCool` - save as JSON file
 
@@ -20,8 +22,8 @@ Process multiple files:
 
 ## Pretty indentation
 
-`--pretty` to enable pretty print output
-`--indent` to specify indentaiton (default 2 spaces)
+* `-p --pretty` to enable pretty print output
+* `-i --indent` to specify indentaiton (default 2 spaces)
 
 These options can be used with both `print` and `save` commands
 
@@ -48,6 +50,20 @@ Saves:
 * `MyCool.json`
 * `dev/CarApp.json`
 
+## Transformations
+
+* `-t --transform` to enable pretty print output
+
+`sketchy print -t pages --log samples/MyCool`
+
+Currently the transformations available are:
+
+* `identity`
+* `pages` - perform an action on each page (via `options.action`)
+
+Add your own in the `src/transformations` folder.
+Currently uses [json-operator](https://www.npmjs.com/package/json-operator) with [jsonpath](https://github.com/kristianmandrup/jsonpath)
+
 ## Sketch format
 
 All the [Sketch types](https://github.com/darknoon/sketchapp-json-flow-types/blob/master/types.js)
@@ -59,3 +75,15 @@ All the [Sketch types](https://github.com/darknoon/sketchapp-json-flow-types/blo
 ## Web Viewer
 
 Be sure to also check the [sketch-web-viewer](https://github.com/AnimaApp/sketch-web-viewer)
+
+## Contribution
+
+Add help add sensible JSON transformations that can be reused in the community!
+
+## TODO
+
+`webpack -p` to compile `src` to `dist` (production mode)
+
+## License
+
+MIT
