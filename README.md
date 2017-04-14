@@ -31,6 +31,8 @@ let sketchJSON = sketch2json(file)
 
 let options = {
   log: true,
+  transform: 'pages',
+  // transformation: (json, options) => {}
   action: (sketch) => {
     let newSketch = sketch
     // ... some JSON transformations
@@ -39,6 +41,10 @@ let options = {
 }
 
 let mySketchy = sketchy.actions.transform(sketchJSON, file, options)
+// ...
+sketchy.actions.print(mySketchy, file, options)
+// ...
+sketchy.actions.save(mySketchy, outFile, options)
 ```
 
 ## Pretty indentation
