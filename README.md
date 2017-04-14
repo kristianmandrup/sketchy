@@ -1,5 +1,7 @@
 # Sketchy
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/sketchy.svg)](https://greenkeeper.io/)
+
 Sketch 43 CLI wrapper for [sketch2json](https://github.com/xaviervia/sketch2json)
 
 *Print* or *Save* your Sketch files as JSON directly from the CLI :)
